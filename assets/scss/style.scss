@@ -6,6 +6,7 @@
             body {
                 font-family: 'Open Sans', sans-serif;
                 background: #040404;
+                color: #fff;
             }
             /* style pr le header */
             
@@ -62,12 +63,12 @@
                     a {
                         text-transform: uppercase;
                         position: relative;
-                        color: rgba(255, 255, 255, 0.7);
                         font-size: 1.1rem;
                         font-family: 'Poppins', sans-serif;
                         font-weight: 400;
+                        color: #fff;
                         &:hover {
-                            color: #fff;
+                            color: rgba(255, 255, 255, 0.7) !important;
                         }
                     }
                 }
@@ -81,7 +82,6 @@
                 border: 5px solid rgb(248, 81, 4);
                 .container-fluid {
                     // margin: 30px;
-                    color: #fff;
                     h2 {
                         border: 5px solid rgb(0, 225, 255);
                         font-size: 3rem !important;
@@ -164,7 +164,6 @@
                         background-color: rgba(255, 255, 255, 0.08) !important;
                         border: 5px solid yellow;
                         h3 {
-                            color: #fff;
                             &:hover {
                                 color: rgba(255, 255, 255, 0.7);
                             }
@@ -195,6 +194,41 @@
                     // .retour {
                     //     background: rgba(255, 255, 255, 0.08);
                     // }
+                }
+                .section2 {
+                    border: 5px solid rgb(255, 0, 191);
+                    width: 100%;
+                    margin-top: 100px !important;
+                    h2 {
+                        border: 5px solid rgb(68, 0, 255);
+                        border: 5px solid rgb(0, 225, 255);
+                        font-size: 3rem !important;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        margin-bottom: 100px;
+                        // text-align: center;
+                        // position: relative;
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    P {
+                        padding: 30px;
+                        height: 47vh;
+                        margin-bottom: 14px;
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    .propos {
+                        border: 5px solid rgb(0, 255, 13);
+                        background: rgba(255, 255, 255, 0.08) !important;
+                    }
+                    .img {
+                        border: 5px solid rgb(238, 255, 0);
+                        height: 100vh;
+                    }
                 }
             }
             /* FIN MAIN */

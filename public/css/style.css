@@ -6,6 +6,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background: #040404;
+  color: #fff;
 }
 
 /* style pr le header */
@@ -60,22 +61,19 @@ body {
 #header .nav-menu a {
   text-transform: uppercase;
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  color: #fff;
 }
 #header .nav-menu a:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* fin header */
 main {
   overflow: hidden !important;
   border: 5px solid #f85104;
-}
-main .container-fluid {
-  color: #fff;
 }
 main .container-fluid h2 {
   border: 5px solid #00e1ff;
@@ -146,9 +144,6 @@ main .section1 .rapha {
   background-color: rgba(255, 255, 255, 0.08) !important;
   border: 5px solid yellow;
 }
-main .section1 .rapha h3 {
-  color: #fff;
-}
 main .section1 .rapha h3:hover {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -173,6 +168,39 @@ main .section1 img {
   border: 5px solid #ffc400;
   height: 100vh !important;
   width: 100%;
+}
+main .section2 {
+  border: 5px solid #ff00bf;
+  width: 100%;
+  margin-top: 100px !important;
+}
+main .section2 h2 {
+  border: 5px solid #4400ff;
+  border: 5px solid #00e1ff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+main .section2 h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section2 P {
+  padding: 30px;
+  height: 47vh;
+  margin-bottom: 14px;
+}
+main .section2 P:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section2 .propos {
+  border: 5px solid #00ff0d;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+main .section2 .img {
+  border: 5px solid #eeff00;
+  height: 100vh;
 }
 
 /* FIN MAIN */
