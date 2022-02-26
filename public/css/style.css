@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* style pr le header */
+#header {
+  background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
+  border: 5px solid red;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-right: 300px;
+  margin-top: 5px;
+}
+#header h1:hover {
+  color: #fff;
+}
+#header nav {
+  text-align: center;
+  top: -270px;
+}
+#header .nav-menu {
+  border: 5px solid #f4f804;
+  margin-right: 70px;
+  width: 100%;
+}
+#header .nav-menu .bouton {
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+}
+#header .nav-menu ul {
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+#header .nav-menu ul li {
+  margin-left: 15px;
+}
+#header .nav-menu a {
+  text-transform: uppercase;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#header .nav-menu a:hover {
+  color: #fff;
+}
+
+/* fin header */
+main {
+  overflow: hidden !important;
+  border: 5px solid #f85104;
+}
+main .container-fluid h2 {
+  border: 5px solid #00e1ff;
+}
+main .container-fluid .fa-facebook-f {
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-facebook-f:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-twitter {
+  position: absolute;
+  right: 30px;
+  top: 37%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-twitter:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-instagram {
+  position: absolute;
+  right: 30px;
+  top: 44%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-instagram:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-snapchat-ghost {
+  position: absolute;
+  right: 30px;
+  top: 51%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-snapchat-ghost:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-whatsapp {
+  position: absolute;
+  right: 30px;
+  top: 58%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-whatsapp:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section {
+  border: 5px solid #35f804;
+  width: 100% !important;
+}
+main .section h2 {
+  font-size: 7rem !important;
+  border: 5px solid #00e1ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+main .section h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section .noms {
+  margin: auto;
+  padding: 50% !important;
+  text-transform: uppercase;
+  text-align: center;
+  border: 5px solid #2f00ff;
+  transition: transform 1s;
+}
+main .section .noms a {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: aqua;
+}
+
+/* FIN MAIN */
+footer {
+  margin-top: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  height: 30vh;
+}
+footer .para1 {
+  border: 5px solid rebeccapurple;
+  padding: 40px;
+}
+footer span {
+  padding-top: 20px;
+  margin-right: 40px;
+  font-size: 1rem;
+}
+footer .copy {
+  font-size: 10px;
+}
+
+/* FIN FOOTER */
+
+/*# sourceMappingURL=style.css.map */
