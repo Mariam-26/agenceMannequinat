@@ -38,7 +38,7 @@ body {
 }
 #header nav {
   text-align: center;
-  top: -270px;
+  top: 0px;
 }
 #header .nav-menu {
   border: 5px solid #f4f804;
