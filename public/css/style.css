@@ -74,6 +74,10 @@ body {
 main {
   overflow: hidden !important;
   border: 5px solid #f85104;
+  /* FIN RESEAUX SOCIAUX */
+  /*  FIN SECTION 1 */
+  /* FIN SECTION 2 */
+  /* FIN SECTION 10 */
 }
 main .container-fluid h2 {
   border: 5px solid #00e1ff;
@@ -170,11 +174,45 @@ main .section1 img {
   width: 100%;
 }
 main .section2 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section2 .lamia {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section2 .lamia h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section2 .lamia p {
+  margin: 50px;
+  transition: transform 1s;
+}
+main .section2 .lamia p:hover {
+  transform: scale(1.3);
+}
+main .section2 .connectées {
+  background-image: url(../../public/img/lamia.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section2 img {
+  width: 100%;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section2 img:hover {
+  transform: scale(1.5);
+}
+main .section10 {
   border: 5px solid #ff00bf;
   width: 100%;
   margin-top: 100px !important;
 }
-main .section2 h2 {
+main .section10 h2 {
   border: 5px solid #4400ff;
   border: 5px solid #00e1ff;
   font-size: 3rem !important;
@@ -183,22 +221,22 @@ main .section2 h2 {
   line-height: 1;
   margin-bottom: 100px;
 }
-main .section2 h2:hover {
+main .section10 h2:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-main .section2 P {
+main .section10 P {
   padding: 30px;
   height: 47vh;
   margin-bottom: 14px;
 }
-main .section2 P:hover {
+main .section10 P:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-main .section2 .propos {
+main .section10 .propos {
   border: 5px solid #00ff0d;
   background: rgba(255, 255, 255, 0.08) !important;
 }
-main .section2 .img {
+main .section10 .img {
   border: 5px solid #eeff00;
   height: 100vh;
 }
