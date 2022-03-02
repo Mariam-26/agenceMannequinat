@@ -77,7 +77,17 @@ main {
   /* FIN RESEAUX SOCIAUX */
   /*  FIN SECTION 1 */
   /* FIN SECTION 2 */
+  /* FIN SECTION 3 */
+  /* FIN SECTION 4 */
+  /* FIN SECTION 5 */
+  /* FIN SECTION 6 */
+  /* FIN SECTION 7 */
+  /* FIN SECTION 8 */
+  /* FIN SECTION 9 */
+  /* SECTION 10 */
   /* FIN SECTION 10 */
+  /* SECTION 11 */
+  /* FIN SECTION 11 */
 }
 main .container-fluid h2 {
   border: 5px solid #00e1ff;
@@ -207,59 +217,8 @@ main .section2 img {
 main .section2 img:hover {
   transform: scale(1.5);
 }
-main .section10 {
-  border: 5px solid #ff00bf;
-  width: 100%;
-  margin-top: 100px !important;
-}
-main .section10 h2 {
-  border: 5px solid #4400ff;
-  border: 5px solid #00e1ff;
-  font-size: 3rem !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 100px;
-}
-main .section10 h2:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-main .section10 P {
-  padding: 30px;
-  height: 47vh;
-  margin-bottom: 14px;
-}
-main .section10 P:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-main .section10 .propos {
-  border: 5px solid #00ff0d;
-  background: rgba(255, 255, 255, 0.08) !important;
-}
-main .section10 .img {
-  border: 5px solid #eeff00;
-  height: 100vh;
-}
 
 /* FIN MAIN */
-footer {
-  margin-top: 400px;
-  background: rgba(255, 255, 255, 0.08);
-  height: 30vh;
-}
-footer .para1 {
-  border: 5px solid rebeccapurple;
-  padding: 40px;
-}
-footer span {
-  padding-top: 20px;
-  margin-right: 40px;
-  font-size: 1rem;
-}
-footer .copy {
-  font-size: 10px;
-}
-
 /* FIN FOOTER */
 
 /*# sourceMappingURL=style.css.map */
