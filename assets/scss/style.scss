@@ -234,3 +234,40 @@
                 }
             }
             /* FIN SECTION 2 */
+            SECTION 3 .section3 {
+                border: 5px solid rgb(0, 4, 255);
+                margin-top: 100px !important;
+                .justine {
+                    background: rgba(255, 255, 255, 0.08) !important;
+                    border: 5px solid rgb(0, 255, 76);
+                    h3 {
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    p {
+                        margin: 50px;
+                        transition: transform 1s;
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+                .connectées {
+                    background-image: url(../../public/img/just.jpg);
+                    height: 100vh;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    border: 5px solid rgb(248, 245, 245);
+                }
+                img {
+                    width: 100%;
+                    border: 5px solid rgb(0, 255, 0);
+                    transition: transform 1.5s;
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            /* FIN SECTION 3 */
