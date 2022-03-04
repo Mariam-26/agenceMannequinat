@@ -473,4 +473,38 @@
                 }
             }
             /* FIN SECTION 8 */
-            // }
+            // SECTION 9
+            .section9 {
+                border: 5px solid rgb(255, 0, 191);
+                width: 100%;
+                margin-top: 100px !important;
+                h2 {
+                    border: 5px solid rgb(68, 0, 255);
+                    border: 5px solid rgb(0, 225, 255);
+                    font-size: 3rem !important;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    margin-bottom: 100px;
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+                P {
+                    padding: 30px;
+                    height: 47vh;
+                    margin-bottom: 14px;
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+                .propos {
+                    border: 5px solid rgb(0, 255, 13);
+                    background: rgba(255, 255, 255, 0.08) !important;
+                }
+                .img {
+                    border: 5px solid rgb(238, 255, 0);
+                    height: 100vh;
+                }
+            }
+            /* FIN SECTION 9 */
