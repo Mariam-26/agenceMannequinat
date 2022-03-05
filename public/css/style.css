@@ -1,17 +1,546 @@
-/* Error: expected "}".
- *     ,
- * 546 |             /* FIN SECTION 10 *∕
- *     |                                 ^
- *     '
- *   assets\scss\style.scss 546:33  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 546 \2502              /* FIN SECTION 10 */\a     \2502                                  ^\a     \2575 \a   assets\\scss\\style.scss 546:33  root stylesheet';
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #040404;
+  color: #fff;
+}
+
+/* style pr le header */
+#header {
+  background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
+  border: 5px solid red;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-right: 300px;
+  margin-top: 5px;
+}
+#header h1:hover {
+  color: #fff;
+}
+#header nav {
+  text-align: center;
+  top: 0px;
+}
+#header .nav-menu {
+  border: 5px solid #f4f804;
+  margin-right: 70px;
+  width: 100%;
+}
+#header .nav-menu .bouton {
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+}
+#header .nav-menu ul {
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+#header .nav-menu ul li {
+  margin-left: 15px;
+}
+#header .nav-menu a {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+#header .nav-menu a:hover {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* fin header */
+main {
+  overflow: hidden !important;
+  border: 5px solid #f85104;
+  /* FIN RESEAUX SOCIAUX */
+  /*  FIN SECTION 1 */
+  /* FIN SECTION 2 */
+  /* FIN SECTION 3 */
+  /* FIN SECTION 4 */
+  /* FIN SECTION 5 */
+  /* FIN SECTION 6 */
+  /* FIN SECTION 7 */
+  /* FIN SECTION 8 */
+  /* FIN SECTION 9 */
+  /* SECTION 10 */
+  /* FIN SECTION 10 */
+  /* SECTION 11 */
+  /* FIN SECTION 11 */
+}
+main .container-fluid h2 {
+  border: 5px solid #00e1ff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 100px;
+}
+main .container-fluid h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-facebook-f {
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-facebook-f:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-twitter {
+  position: absolute;
+  right: 30px;
+  top: 37%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-twitter:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-instagram {
+  position: absolute;
+  right: 30px;
+  top: 44%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-instagram:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-snapchat-ghost {
+  position: absolute;
+  right: 30px;
+  top: 51%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-snapchat-ghost:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .container-fluid .fa-whatsapp {
+  position: absolute;
+  right: 30px;
+  top: 58%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main .container-fluid .fa-whatsapp:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section1 {
+  border: 5px solid #ff00bf;
+  margin-top: 100px !important;
+}
+main .section1 .rapha {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid yellow;
+}
+main .section1 .rapha h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section1 .rapha p {
+  margin: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+main .section1 .rapha p:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section1 .connectées {
+  background-image: url(../../public/img/rapha.jpg) !important;
+  height: 100vh !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid red;
+}
+main .section1 img {
+  border: 5px solid #ffc400;
+  height: 100vh !important;
+  width: 100%;
+}
+main .section2 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section2 .lamia {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section2 .lamia h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section2 .lamia p {
+  margin: 50px;
+  transition: transform 1s;
+}
+main .section2 .lamia p:hover {
+  transform: scale(1.3);
+}
+main .section2 .connectées {
+  background-image: url(../../public/img/lamia.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section2 img {
+  width: 100%;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section2 img:hover {
+  transform: scale(1.5);
+}
+main .section3 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section3 .justine {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section3 .justine h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section3 .justine p {
+  margin: 50px;
+  transition: transform 1s;
+}
+main .section3 .justine p:hover {
+  transform: scale(1.3);
+}
+main .section3 .connectées {
+  background-image: url(../../public/img/just.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section3 img {
+  width: 100% !important;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section3 img:hover {
+  transform: scale(1.5);
+}
+main .section4 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section4 .patrick {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section4 .patrick h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section4 .patrick p {
+  margin: 50px;
+  transition: transform 1s;
+}
+main .section4 .patrick p:hover {
+  transform: scale(1.3);
+}
+main .section4 .connectées {
+  background-image: url(../../public/img/patrick.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section4 img {
+  background-position: top !important;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section4 img:hover {
+  transform: scale(1.5);
+}
+main .section5 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section5 .barbara {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section5 .barbara h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section5 .barbara p {
+  margin: 50px;
+  transition: transform 1s;
+}
+main .section5 .barbara p:hover {
+  transform: scale(1.3);
+}
+main .section5 .connectées {
+  background-image: url(../../public/img/barbara.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section5 img {
+  background-position: top !important;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section5 img:hover {
+  transform: scale(1.5);
+}
+main .section6 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section6 .latifa {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section6 .latifa h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section6 .latifa p {
+  margin: 40px;
+  transition: transform 1s;
+}
+main .section6 .latifa p:hover {
+  transform: scale(1.3);
+}
+main .section6 .connectées {
+  background-image: url(../../public/img/lat1.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section6 img {
+  background-position: top !important;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section6 img:hover {
+  transform: scale(1.5);
+}
+main .section7 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section7 .melodie {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section7 .melodie h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section7 .melodie p {
+  margin: 40px;
+  transition: transform 1s;
+}
+main .section7 .melodie p:hover {
+  transform: scale(1.3);
+}
+main .section7 .connectées {
+  background-image: url(../../public/img/mel2.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section7 img {
+  background-position: top !important;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section7 img:hover {
+  transform: scale(1.5);
+}
+main .section8 {
+  border: 5px solid #0004ff;
+  margin-top: 100px !important;
+}
+main .section8 .daniele {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 5px solid #00ff4c;
+}
+main .section8 .daniele h3:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section8 .daniele p {
+  margin: 40px;
+  transition: transform 1s;
+}
+main .section8 .daniele p:hover {
+  transform: scale(1.3);
+}
+main .section8 .connectées {
+  background-image: url(../../public/img/dan1.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 5px solid #f8f5f5;
+}
+main .section8 img {
+  background-position: top !important;
+  width: 100%;
+  height: 100vh;
+  border: 5px solid lime;
+  transition: transform 1.5s;
+}
+main .section8 img:hover {
+  transform: scale(1.5);
+}
+main .section9 {
+  border: 5px solid #ff00bf;
+  width: 100%;
+  margin-top: 100px !important;
+}
+main .section9 h2 {
+  border: 5px solid #4400ff;
+  border: 5px solid #00e1ff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+main .section9 h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section9 P {
+  padding: 30px;
+  height: 47vh;
+  margin-bottom: 14px;
+}
+main .section9 P:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section9 .propos {
+  border: 5px solid #00ff0d;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+main .section9 .img {
+  border: 5px solid #eeff00;
+  height: 100vh;
+}
+main .section10 {
+  margin-top: 100px !important;
+  border: 5px solid #ff00bf;
+  background: rgba(255, 255, 255, 0.08);
+  margin: auto;
+  width: 100%;
+}
+main .section10 h2 {
+  border: 5px solid #4400ff;
+  border: 5px solid #00e1ff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+main .section10 h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section10 h3 {
+  padding: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .section10 p {
+  padding: 30px 200px;
+}
+main .section10 .book {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 60%;
+  margin: auto;
+}
+main .section11 {
+  border: 5px solid #ff00bf;
+  background: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  margin-top: 100px !important;
+}
+main .section11 h2 {
+  border: 5px solid #4400ff;
+  border: 5px solid #00e1ff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+main .section11 h2:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .section11 h3 {
+  padding: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 5px solid aqua;
+}
+main .section11 p {
+  padding: 30px 200px;
+  border: 5px solid #ff002b;
+}
+main .section11 a {
+  color: #fff;
+}
+main .section11 .newletter {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+main .section11 .newletter .input {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  margin-right: 100px;
+  width: 100%;
+}
+
+/* FIN MAIN */
+
+/*# sourceMappingURL=style.css.map */
