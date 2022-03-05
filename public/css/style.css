@@ -561,5 +561,36 @@ footer .copy {
 }
 
 /* FIN FOOTER */
+@media screen and (max-width: 991px) {
+  /* style pr le header */
+  #header {
+    height: 30vh;
+  }
+  #header h1 {
+    font-size: 1.5rem;
+  }
+
+  /* fin header */
+  .container h2 {
+    font-size: 4rem !important;
+  }
+  .container h3 {
+    font-size: 2rem !important;
+    margin-bottom: 40px;
+  }
+
+  /* FIN MAIN */
+  footer {
+    margin-bottom: 30px;
+  }
+  footer span {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  footer .copy {
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
