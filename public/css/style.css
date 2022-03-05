@@ -542,5 +542,24 @@ main .section11 .newletter .input {
 }
 
 /* FIN MAIN */
+footer {
+  margin-top: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  height: 30vh;
+}
+footer .para1 {
+  border: 5px solid rebeccapurple;
+  padding: 40px;
+}
+footer span {
+  padding-top: 20px;
+  margin-right: 40px;
+  font-size: 1rem;
+}
+footer .copy {
+  font-size: 10px;
+}
+
+/* FIN FOOTER */
 
 /*# sourceMappingURL=style.css.map */
