@@ -567,6 +567,91 @@ footer .copy {
 }
 
 /* FIN FOOTER */
+@media screen and (max-width: 990px) {
+  /* HEADER */
+  #header h1 {
+    font-size: 2rem;
+  }
+  #header .nav-menu a {
+    font-size: 1.1rem;
+  }
+
+  /* FIN HEADER */
+  main .container-fluid h2 {
+    font-size: 2.5rem !important;
+    margin-top: 50px;
+  }
+  main .container {
+    /*  FIN SECTION 1 à 11 */
+    /* FIN SECTION 9 */
+    /* SECTION 10 */
+    /* FIN SECTION 10 */
+    /* SECTION 11 */
+    /* FIN SECTION 11 */
+  }
+  main .container .section1,
+main .container .section2,
+main .container .section3,
+main .container .section4,
+main .container .section5,
+main .container .section6,
+main .container .section7,
+main .container .section8,
+main .container .section9,
+main .container .section10,
+main .container .section11 {
+    margin-top: 50px !important;
+  }
+  main .container .section9 h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 50px;
+  }
+  main .container .section9 P {
+    padding: 30px !important;
+  }
+  main .container .section10 h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 50px;
+  }
+  main .container .section10 h3 {
+    padding: 0px;
+  }
+  main .container .section10 p {
+    padding: 30px;
+  }
+  main .container .section11 h2 {
+    font-size: 2.5rem !important;
+  }
+  main .container .section11 h3 {
+    padding: 0px;
+  }
+  main .container .section11 .para {
+    font-size: 2rem !important;
+  }
+  main .container .section11 p {
+    padding: 30px;
+  }
+
+  /* FIN MAIN */
+  footer {
+    margin-top: 100px;
+    height: 30vh;
+  }
+  footer .para1 {
+    padding: 40px;
+  }
+  footer span {
+    padding-top: 20px;
+    margin-right: 35px !important;
+    font-size: 0.9rem;
+  }
+  footer .copy {
+    font-size: 12px;
+  }
+
+  /* FIN FOOTER */
+}
+/* FIN MEDIA QUERY */
 @media screen and (max-width: 760px) {
   /* HEADER */
   #header h1 {

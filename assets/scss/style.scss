@@ -600,6 +600,112 @@
         /* FIN FOOTER */
         
         // MEDIA QUERY
+        // TABLETTE
+        @media screen and (max-width: 990px) {
+            /* HEADER */
+            #header {
+                h1 {
+                    font-size: 2rem;
+                }
+                // NAV
+                .nav-menu {
+                    a {
+                        font-size: 1.1rem;
+                    }
+                }
+                // FIN NAV
+            }
+            /* FIN HEADER */
+            // MAIN
+            main {
+                .container-fluid {
+                    h2 {
+                        font-size: 2.5rem !important;
+                        margin-top: 50px;
+                    }
+                    // RESEAUX SOCIAUX
+                }
+                .container {
+                    // SECTION 1 à 11
+                    .section1,
+                    .section2,
+                    .section3,
+                    .section4,
+                    .section5,
+                    .section6,
+                    .section7,
+                    .section8,
+                    .section9,
+                    .section10,
+                    .section11 {
+                        margin-top: 50px !important;
+                    }
+                    /*  FIN SECTION 1 à 11 */
+                    // SECTION 9
+                    .section9 {
+                        h2 {
+                            font-size: 2.5rem !important;
+                            margin-bottom: 50px;
+                        }
+                        P {
+                            padding: 30px !important;
+                        }
+                    }
+                    /* FIN SECTION 9 */
+                    /* SECTION 10 */
+                    .section10 {
+                        h2 {
+                            font-size: 2.5rem !important;
+                            margin-bottom: 50px;
+                        }
+                        h3 {
+                            padding: 0px;
+                        }
+                        p {
+                            padding: 30px;
+                        }
+                    }
+                    /* FIN SECTION 10 */
+                    /* SECTION 11 */
+                    .section11 {
+                        h2 {
+                            font-size: 2.5rem !important;
+                        }
+                        h3 {
+                            padding: 0px;
+                        }
+                        .para {
+                            font-size: 2rem !important;
+                        }
+                        p {
+                            padding: 30px;
+                        }
+                    }
+                    /* FIN SECTION 11 */
+                }
+            }
+            /* FIN MAIN */
+            // FOOTER
+            footer {
+                margin-top: 100px;
+                height: 30vh;
+                .para1 {
+                    padding: 40px;
+                }
+                span {
+                    padding-top: 20px;
+                    margin-right: 35px !important;
+                    font-size: .9rem;
+                }
+                .copy {
+                    font-size: 12px;
+                }
+            }
+            /* FIN FOOTER */
+        }
+        /* FIN MEDIA QUERY */
+        
+        // FIN TABLETTE
         // MEDIA QUERY
         // MOBILE
         @media screen and (max-width: 760px) {
