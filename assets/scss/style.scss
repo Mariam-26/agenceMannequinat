@@ -6,460 +6,363 @@
         }
         
         body {
-            border: 5px solid red;
+            border: 5px solid rgb(9, 0, 128);
             font-family: 'Open Sans', sans-serif;
             background: #040404;
             color: #fff;
         }
-        /* HEADER */
         
-        #header {
-            background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
-            border: 5px solid red;
-            transition: ease-in-out 0.3s;
-            position: relative;
+        // FAUX SELECTEUR
+        %img {
+            border: 5px solid rgb(0, 255, 0);
+            width: 100%;
             height: 100vh;
-            display: flex;
-            align-items: center;
-            * {
-                transition: ease-in-out 0.3s;
+            transition: transform 1.5s;
+            &:hover {
+                transform: scale(1.5);
             }
-            h1 {
-                text-transform: uppercase;
-                display: block;
-                position: relative;
+        }
+        
+        %fa {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            &:hover {
                 color: rgba(255, 255, 255, 0.7);
-                font-size: 2.1rem;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                margin-right: 300px;
-                margin-top: 5px;
-                &:hover {
-                    color: #fff;
-                }
             }
-            // NAV
-            nav {
+        }
+        
+        %prenom {
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 5px solid rgb(0, 255, 76);
+        }
+        
+        %section {
+            border: 5px solid rgb(255, 0, 191);
+            margin-top: 100px !important
+        }
+        
+        %connectees {
+            height: 100vh !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border: 5px solid red;
+        }
+        
+        %prenomP {
+            transition: transform 1s !important;
+            font-weight: bold;
+            &:hover {
+                color: rgba(255, 255, 255, 0.7);
+                transform: scale(1.3);
+            }
+        }
+        
+        %h2 {
+            border: 5px solid rgb(0, 225, 255);
+            font-size: 3rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1;
+            &:hover {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        
+        %prenomH3 {
+            &:hover {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            %h3 {
+                padding: 50px;
+                text-transform: uppercase;
                 text-align: center;
-                top: 0px;
+                border: 5px solid rgb(0, 255, 255);
             }
-            .nav-menu {
-                border: 5px solid rgb(244, 248, 4);
-                margin-right: 70px;
-                width: 100%;
-                .bouton {
-                    color: rgba(255, 255, 255, 0.7);
-                    border: 1px solid rgba(255, 255, 255, 0.7);
-                    margin-right: 10px;
+            /* HEADER */
+            #header {
+                background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
+                border: 5px solid red;
+                transition: ease-in-out 0.3s;
+                position: relative;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                * {
+                    transition: ease-in-out 0.3s;
                 }
-                ul {
-                    padding: 0;
-                    list-style: none;
-                    margin: auto;
-                    li {
-                        margin-left: 15px;
-                    }
-                }
-                a {
+                h1 {
                     text-transform: uppercase;
+                    display: block;
                     position: relative;
-                    font-size: 1.1rem;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 2.1rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
-                    color: #fff;
+                    margin-right: 300px;
+                    margin-top: 5px;
                     &:hover {
-                        color: rgba(255, 255, 255, 0.7) !important;
+                        color: #fff;
                     }
                 }
+                // NAV
+                nav {
+                    text-align: center;
+                    top: 0px;
+                }
+                .nav-menu {
+                    border: 5px solid rgb(244, 248, 4);
+                    margin-right: 70px;
+                    width: 100%;
+                    .bouton {
+                        color: rgba(255, 255, 255, 0.7);
+                        border: 1px solid rgba(255, 255, 255, 0.7);
+                        margin-right: 10px;
+                    }
+                    ul {
+                        padding: 0;
+                        list-style: none;
+                        margin: auto;
+                        li {
+                            margin-left: 15px;
+                        }
+                    }
+                    a {
+                        text-transform: uppercase;
+                        position: relative;
+                        font-size: 1.1rem;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        color: #fff;
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.7) !important;
+                        }
+                    }
+                }
+                // FIN NAV
             }
-            // FIN NAV
-        }
-        /* FIN HEADER */
-        
-        // MAIN
-        main {
-            border: 5px solid rgb(248, 81, 4);
-            .container-fluid {
-                h2 {
-                    border: 5px solid rgb(0, 225, 255);
-                    font-size: 3rem !important;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    line-height: 1;
-                    margin-top: 100px;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
+            /* FIN HEADER */
+            // MAIN
+            main {
+                border: 5px solid rgb(248, 81, 4);
+                .container-fluid {
+                    h2 {
+                        @extend %h2;
+                        margin-top: 100px;
+                    }
+                    // RESEAUX SOCIAUX
+                    .fa-facebook-f {
+                        right: 30px;
+                        top: 30%;
+                        @extend %fa;
+                    }
+                    .fa-twitter {
+                        right: 30px;
+                        top: 37%;
+                        @extend %fa;
+                    }
+                    .fa-instagram {
+                        right: 30px;
+                        top: 44%;
+                        @extend %fa;
+                    }
+                    .fa-snapchat-ghost {
+                        right: 30px;
+                        top: 51%;
+                        @extend %fa;
+                    }
+                    .fa-whatsapp {
+                        right: 30px;
+                        top: 58%;
+                        @extend %fa;
                     }
                 }
-                // RESEAUX SOCIAUX
-                .fa-facebook-f {
-                    position: absolute;
-                    right: 30px;
-                    top: 30%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-                .fa-twitter {
-                    position: absolute;
-                    right: 30px;
-                    top: 37%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-                .fa-instagram {
-                    position: absolute;
-                    right: 30px;
-                    top: 44%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-                .fa-snapchat-ghost {
-                    position: absolute;
-                    right: 30px;
-                    top: 51%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-                .fa-whatsapp {
-                    position: absolute;
-                    right: 30px;
-                    top: 58%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    &:hover {
-                        color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-            }
-            /* FIN RESEAUX SOCIAUX */
-            // SECTION 1
-            .container {
-                .section1 {
-                    border: 5px solid rgb(255, 0, 191);
-                    margin-top: 100px !important;
-                    .rapha {
-                        background-color: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid yellow;
+                /* FIN RESEAUX SOCIAUX */
+                // SECTION 1
+                .container {
+                    .section1 {
+                        @extend %section;
+                        .rapha {
+                            @extend %prenom;
+                        }
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
+                            @extend %prenomP;
                             margin: 40px;
-                            color: #fff;
-                            font-weight: bold;
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/rapha.jpg) !important;
-                        height: 100vh !important;
                         background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid red;
+                        @extend %connectees;
                     }
                     img {
-                        border: 5px solid rgb(255, 196, 0);
-                        height: 100vh !important;
-                        width: 100%;
+                        @extend %img;
+                        &:hover {
+                            transition: 00.3s ease-in-out;
+                            transform-origin: 50% 50%;
+                            filter: contrast(140%);
+                        }
                     }
                 }
                 /*  FIN SECTION 1 */
                 // SECTION 2
                 .section2 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .lamia {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
-                            margin: 50px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            margin: 40px;
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/lamia.jpg);
-                        height: 100vh;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
-                /* FIN SECTION 2 */
+                //  FIN SECTION 2 
                 // SECTION 3 
                 .section3 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .justine {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
-                            margin: 50px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            margin: 40px;
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/just.jpg);
-                        height: 100vh;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        height: 100vh;
-                        width: 100% !important;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 3 */
                 // SECTION 4
                 .section4 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .patrick {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
                             margin: 50px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/patrick.jpg);
-                        height: 100vh;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        background-position: top !important;
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 4 */
                 // SECTION 5
                 .section5 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .barbara {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
-                            margin: 50px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            margin: 40px;
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/barbara.jpg);
-                        height: 100vh;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        background-position: top !important;
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 5 */
                 // SECTION 6
                 .section6 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .latifa {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
                             margin: 40px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/lat1.jpg);
-                        height: 100vh;
                         background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        background-position: top !important;
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 6 */
                 // SECTION 7 
                 .section7 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .melodie {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
                             margin: 40px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/mel2.jpg);
-                        height: 100vh;
                         background-position: top;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        background-position: top !important;
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 7 */
                 // SECTION 8
                 .section8 {
-                    border: 5px solid rgb(0, 4, 255);
-                    margin-top: 100px !important;
+                    @extend %section;
                     .daniele {
-                        background: rgba(255, 255, 255, 0.08) !important;
-                        border: 5px solid rgb(0, 255, 76);
+                        @extend %prenom;
                         h3 {
-                            &:hover {
-                                color: rgba(255, 255, 255, 0.7);
-                            }
+                            @extend %prenomH3;
                         }
                         p {
                             margin: 40px;
-                            transition: transform 1s;
-                            &:hover {
-                                transform: scale(1.3);
-                            }
+                            @extend %prenomP;
                         }
                     }
-                    .connectées {
+                    .connectees {
                         background-image: url(../../public/img/dan1.jpg);
-                        height: 100vh;
                         background-position: top;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        border: 5px solid rgb(248, 245, 245);
+                        @extend %connectees;
                     }
                     img {
-                        background-position: top !important;
-                        width: 100%;
-                        height: 100vh;
-                        border: 5px solid rgb(0, 255, 0);
-                        transition: transform 1.5s;
-                        &:hover {
-                            transform: scale(1.5);
-                        }
+                        @extend %img;
                     }
                 }
                 /* FIN SECTION 8 */
@@ -469,16 +372,8 @@
                     width: 100%;
                     margin-top: 100px !important;
                     h2 {
-                        border: 5px solid rgb(68, 0, 255);
-                        border: 5px solid rgb(0, 225, 255);
-                        font-size: 3rem !important;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        line-height: 1;
+                        @extend %h2;
                         margin-bottom: 100px;
-                        &:hover {
-                            color: rgba(255, 255, 255, 0.7);
-                        }
                     }
                     P {
                         padding: 30px;
@@ -506,21 +401,11 @@
                     margin: auto;
                     width: 100%;
                     h2 {
-                        border: 5px solid rgb(68, 0, 255);
-                        border: 5px solid rgb(0, 225, 255);
-                        font-size: 3rem !important;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        line-height: 1;
+                        @extend %h2;
                         margin-bottom: 50px;
-                        &:hover {
-                            color: rgba(255, 255, 255, 0.7);
-                        }
                     }
                     h3 {
-                        padding: 50px;
-                        text-transform: uppercase;
-                        text-align: center;
+                        @extend %h3;
                     }
                     p {
                         padding: 30px 200px;
@@ -539,22 +424,11 @@
                     width: 100%;
                     margin-top: 100px !important;
                     h2 {
-                        border: 5px solid rgb(68, 0, 255);
-                        border: 5px solid rgb(0, 225, 255);
-                        font-size: 3rem !important;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        line-height: 1;
+                        @extend %h2;
                         margin-bottom: 50px;
-                        &:hover {
-                            color: rgba(255, 255, 255, 0.7);
-                        }
                     }
                     h3 {
-                        padding: 50px;
-                        text-transform: uppercase;
-                        text-align: center;
-                        border: 5px solid rgb(0, 255, 255);
+                        @extend %h3;
                     }
                     p {
                         padding: 30px 200px;
@@ -616,11 +490,15 @@
                 // FIN NAV
             }
             /* FIN HEADER */
+            // FAUX SELECTEUR
+            %fs {
+                font-size: 2.5rem !important;
+            }
             // MAIN
             main {
                 .container-fluid {
                     h2 {
-                        font-size: 2.5rem !important;
+                        @extend %fs;
                         margin-top: 50px;
                     }
                     // RESEAUX SOCIAUX
@@ -644,7 +522,7 @@
                     // SECTION 9
                     .section9 {
                         h2 {
-                            font-size: 2.5rem !important;
+                            @extend %fs;
                             margin-bottom: 50px;
                         }
                         P {
@@ -655,7 +533,7 @@
                     /* SECTION 10 */
                     .section10 {
                         h2 {
-                            font-size: 2.5rem !important;
+                            @extend %fs;
                             margin-bottom: 50px;
                         }
                         h3 {
@@ -669,13 +547,13 @@
                     /* SECTION 11 */
                     .section11 {
                         h2 {
-                            font-size: 2.5rem !important;
+                            @extend %fs;
                         }
                         h3 {
                             padding: 0px;
                         }
                         .para {
-                            font-size: 2rem !important;
+                            @extend h2;
                         }
                         p {
                             padding: 30px;
@@ -724,12 +602,16 @@
             }
             /* FIN HEADER */
             // MAIN
+            // FAUX SELECTEUR
+            %h2 {
+                font-size: 2rem !important;
+                margin-top: 50px;
+            }
             main {
                 overflow: hidden !important;
                 .container-fluid {
                     h2 {
-                        font-size: 2rem !important;
-                        margin-top: 50px;
+                        @extend %h2;
                     }
                     // RESEAUX SOCIAUX
                 }
@@ -752,8 +634,7 @@
                     // SECTION 9
                     .section9 {
                         h2 {
-                            font-size: 2rem !important;
-                            margin-bottom: 50px;
+                            @extend %h2;
                         }
                         P {
                             padding: 30px !important;
@@ -763,8 +644,7 @@
                     /* SECTION 10 */
                     .section10 {
                         h2 {
-                            font-size: 2rem !important;
-                            margin-bottom: 50px;
+                            @extend %h2;
                         }
                         h3 {
                             padding: 0px;
