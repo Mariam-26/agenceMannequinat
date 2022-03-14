@@ -1,743 +1,654 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  border: 5px solid red;
-  font-family: "Open Sans", sans-serif;
-  background: #040404;
-  color: #fff;
+    border: 5px solid red;
+    font-family: "Open Sans", sans-serif;
+    background: #040404;
+    color: #fff;
 }
+
+main .container .section8 img,
+main .container .section7 img,
+main .container .section6 img,
+main .container .section5 img,
+main .container .section4 img,
+main .container .section3 img,
+main .container .section2 img,
+main .container .section1 img {
+    border: 5px solid lime;
+    width: 100%;
+    height: 100vh;
+    transition: transform 1.5s;
+}
+
+main .container .section8 img:hover,
+main .container .section7 img:hover,
+main .container .section6 img:hover,
+main .container .section5 img:hover,
+main .container .section4 img:hover,
+main .container .section3 img:hover,
+main .container .section2 img:hover,
+main .container .section1 img:hover {
+    transform: scale(1.5);
+}
+
+main .container-fluid .fa-whatsapp,
+main .container-fluid .fa-snapchat-ghost,
+main .container-fluid .fa-instagram,
+main .container-fluid .fa-twitter,
+main .container-fluid .fa-facebook-f {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+main .container-fluid .fa-whatsapp:hover,
+main .container-fluid .fa-snapchat-ghost:hover,
+main .container-fluid .fa-instagram:hover,
+main .container-fluid .fa-twitter:hover,
+main .container-fluid .fa-facebook-f:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .container .section8 .daniele,
+main .container .section7 .melodie,
+main .container .section6 .latifa,
+main .container .section5 .barbara,
+main .container .section4 .patrick,
+main .container .section3 .justine,
+main .container .section2 .lamia,
+main .container .section1 .rapha {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 5px solid #00ff4c;
+}
+
+main .container .section8,
+main .container .section7,
+main .container .section6,
+main .container .section5,
+main .container .section4,
+main .container .section3,
+main .container .section2,
+main .container .section1 {
+    border: 5px solid #ff00bf;
+    margin-top: 100px !important;
+}
+
+main .container .section8 .connectees,
+main .container .section7 .connectees,
+main .container .section6 .connectees,
+main .container .section5 .connectees,
+main .container .section4 .connectees,
+main .container .section3 .connectees,
+main .container .section2 .connectees,
+main .container .section1 .connectees {
+    height: 100vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 5px solid red;
+}
+
+main .container .section8 .daniele p,
+main .container .section7 .melodie p,
+main .container .section6 .latifa p,
+main .container .section5 .barbara p,
+main .container .section4 .patrick p,
+main .container .section3 .justine p,
+main .container .section2 .lamia p,
+main .container .section1 .rapha p {
+    transition: transform 1s !important;
+    font-weight: bold;
+}
+
+main .container .section8 .daniele p:hover,
+main .container .section7 .melodie p:hover,
+main .container .section6 .latifa p:hover,
+main .container .section5 .barbara p:hover,
+main .container .section4 .patrick p:hover,
+main .container .section3 .justine p:hover,
+main .container .section2 .lamia p:hover,
+main .container .section1 .rapha p:hover {
+    color: rgba(255, 255, 255, 0.7);
+    transform: scale(1.3);
+}
+
+main .container .section11 h2,
+main .container .section10 h2,
+main .container .section9 h2,
+main .container-fluid h2 {
+    border: 5px solid #00e1ff;
+    font-size: 3rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+main .container .section11 h2:hover,
+main .container .section10 h2:hover,
+main .container .section9 h2:hover,
+main .container-fluid h2:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+main .container .section11 h3,
+main .container .section10 h3 {
+    padding: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 5px solid aqua;
+}
+
 
 /* HEADER */
+
 #header {
-  background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
-  border: 5px solid red;
-  transition: ease-in-out 0.3s;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+    background: no-repeat url(../../public/img/accueil1.jpg) top/cover !important;
+    border: 5px solid red;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
 #header * {
-  transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
+
 #header h1 {
-  text-transform: uppercase;
-  display: block;
-  position: relative;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 2.1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  margin-right: 300px;
-  margin-top: 5px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-right: 300px;
+    margin-top: 5px;
 }
+
 #header h1:hover {
-  color: #fff;
+    color: #fff;
 }
+
 #header nav {
-  text-align: center;
-  top: 0px;
+    text-align: center;
+    top: 0px;
 }
+
 #header .nav-menu {
-  border: 5px solid #f4f804;
-  margin-right: 70px;
-  width: 100%;
+    border: 5px solid #f4f804;
+    margin-right: 70px;
+    width: 100%;
 }
+
 #header .nav-menu .bouton {
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  margin-right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
 }
+
 #header .nav-menu ul {
-  padding: 0;
-  list-style: none;
-  margin: auto;
+    padding: 0;
+    list-style: none;
+    margin: auto;
 }
+
 #header .nav-menu ul li {
-  margin-left: 15px;
+    margin-left: 15px;
 }
+
 #header .nav-menu a {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 1.1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
 }
+
 #header .nav-menu a:hover {
-  color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
+
 
 /* FIN HEADER */
+
 main {
-  border: 5px solid #f85104;
-  /* FIN RESEAUX SOCIAUX */
+    border: 5px solid #f85104;
+    /* FIN RESEAUX SOCIAUX */
 }
+
 main .container-fluid h2 {
-  border: 5px solid #00e1ff;
-  font-size: 3rem !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-top: 100px;
+    margin-top: 100px;
 }
-main .container-fluid h2:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container-fluid .fa-facebook-f {
-  position: absolute;
-  right: 30px;
-  top: 30%;
-  font-size: 1.5rem;
-  color: #fff;
+    right: 30px;
+    top: 30%;
 }
-main .container-fluid .fa-facebook-f:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container-fluid .fa-twitter {
-  position: absolute;
-  right: 30px;
-  top: 37%;
-  font-size: 1.5rem;
-  color: #fff;
+    right: 30px;
+    top: 37%;
 }
-main .container-fluid .fa-twitter:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container-fluid .fa-instagram {
-  position: absolute;
-  right: 30px;
-  top: 44%;
-  font-size: 1.5rem;
-  color: #fff;
+    right: 30px;
+    top: 44%;
 }
-main .container-fluid .fa-instagram:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container-fluid .fa-snapchat-ghost {
-  position: absolute;
-  right: 30px;
-  top: 51%;
-  font-size: 1.5rem;
-  color: #fff;
+    right: 30px;
+    top: 51%;
 }
-main .container-fluid .fa-snapchat-ghost:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container-fluid .fa-whatsapp {
-  position: absolute;
-  right: 30px;
-  top: 58%;
-  font-size: 1.5rem;
-  color: #fff;
+    right: 30px;
+    top: 58%;
 }
-main .container-fluid .fa-whatsapp:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container {
-  /*  FIN SECTION 1 */
-  /* FIN SECTION 2 */
-  /* FIN SECTION 3 */
-  /* FIN SECTION 4 */
-  /* FIN SECTION 5 */
-  /* FIN SECTION 6 */
-  /* FIN SECTION 7 */
-  /* FIN SECTION 8 */
-  /* FIN SECTION 9 */
-  /* SECTION 10 */
-  /* FIN SECTION 10 */
-  /* SECTION 11 */
-  /* FIN SECTION 11 */
+    /*  FIN SECTION 1 */
+    /* FIN SECTION 3 */
+    /* FIN SECTION 4 */
+    /* FIN SECTION 5 */
+    /* FIN SECTION 6 */
+    /* FIN SECTION 7 */
+    /* FIN SECTION 8 */
+    /* FIN SECTION 9 */
+    /* SECTION 10 */
+    /* FIN SECTION 10 */
+    /* SECTION 11 */
+    /* FIN SECTION 11 */
 }
-main .container .section1 {
-  border: 5px solid #ff00bf;
-  margin-top: 100px !important;
-}
-main .container .section1 .rapha {
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid yellow;
-}
+
 main .container .section1 .rapha h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section1 .rapha p {
-  margin: 40px;
-  color: #fff;
-  font-weight: bold;
+    margin: 40px;
 }
-main .container .section1 .rapha p:hover {
-  color: rgba(255, 255, 255, 0.7);
+
+main .container .section1 .connectees {
+    background-image: url(../../public/img/rapha.jpg) !important;
+    background-position: center;
 }
-main .container .section1 .connectées {
-  background-image: url(../../public/img/rapha.jpg) !important;
-  height: 100vh !important;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid red;
-}
-main .container .section1 img {
-  border: 5px solid #ffc400;
-  height: 100vh !important;
-  width: 100%;
-}
-main .container .section2 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section2 .lamia {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section2 .lamia h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section2 .lamia p {
-  margin: 50px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section2 .lamia p:hover {
-  transform: scale(1.3);
+
+main .container .section2 .connectees {
+    background-image: url(../../public/img/lamia.jpg);
 }
-main .container .section2 .connectées {
-  background-image: url(../../public/img/lamia.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section2 img {
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section2 img:hover {
-  transform: scale(1.5);
-}
-main .container .section3 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section3 .justine {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section3 .justine h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section3 .justine p {
-  margin: 50px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section3 .justine p:hover {
-  transform: scale(1.3);
+
+main .container .section3 .connectees {
+    background-image: url(../../public/img/just.jpg);
 }
-main .container .section3 .connectées {
-  background-image: url(../../public/img/just.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section3 img {
-  height: 100vh;
-  width: 100% !important;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section3 img:hover {
-  transform: scale(1.5);
-}
-main .container .section4 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section4 .patrick {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section4 .patrick h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section4 .patrick p {
-  margin: 50px;
-  transition: transform 1s;
+    margin: 50px;
 }
-main .container .section4 .patrick p:hover {
-  transform: scale(1.3);
+
+main .container .section4 .connectees {
+    background-image: url(../../public/img/patrick.jpg);
 }
-main .container .section4 .connectées {
-  background-image: url(../../public/img/patrick.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section4 img {
-  background-position: top !important;
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section4 img:hover {
-  transform: scale(1.5);
-}
-main .container .section5 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section5 .barbara {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section5 .barbara h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section5 .barbara p {
-  margin: 50px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section5 .barbara p:hover {
-  transform: scale(1.3);
+
+main .container .section5 .connectees {
+    background-image: url(../../public/img/barbara.jpg);
 }
-main .container .section5 .connectées {
-  background-image: url(../../public/img/barbara.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section5 img {
-  background-position: top !important;
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section5 img:hover {
-  transform: scale(1.5);
-}
-main .container .section6 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section6 .latifa {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section6 .latifa h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section6 .latifa p {
-  margin: 40px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section6 .latifa p:hover {
-  transform: scale(1.3);
+
+main .container .section6 .connectees {
+    background-image: url(../../public/img/lat1.jpg);
+    background-position: center;
 }
-main .container .section6 .connectées {
-  background-image: url(../../public/img/lat1.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section6 img {
-  background-position: top !important;
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section6 img:hover {
-  transform: scale(1.5);
-}
-main .container .section7 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section7 .melodie {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section7 .melodie h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section7 .melodie p {
-  margin: 40px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section7 .melodie p:hover {
-  transform: scale(1.3);
+
+main .container .section7 .connectees {
+    background-image: url(../../public/img/mel2.jpg);
+    background-position: top;
 }
-main .container .section7 .connectées {
-  background-image: url(../../public/img/mel2.jpg);
-  height: 100vh;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section7 img {
-  background-position: top !important;
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section7 img:hover {
-  transform: scale(1.5);
-}
-main .container .section8 {
-  border: 5px solid #0004ff;
-  margin-top: 100px !important;
-}
-main .container .section8 .daniele {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 5px solid #00ff4c;
-}
+
 main .container .section8 .daniele h3:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section8 .daniele p {
-  margin: 40px;
-  transition: transform 1s;
+    margin: 40px;
 }
-main .container .section8 .daniele p:hover {
-  transform: scale(1.3);
+
+main .container .section8 .connectees {
+    background-image: url(../../public/img/dan1.jpg);
+    background-position: top;
 }
-main .container .section8 .connectées {
-  background-image: url(../../public/img/dan1.jpg);
-  height: 100vh;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 5px solid #f8f5f5;
-}
-main .container .section8 img {
-  background-position: top !important;
-  width: 100%;
-  height: 100vh;
-  border: 5px solid lime;
-  transition: transform 1.5s;
-}
-main .container .section8 img:hover {
-  transform: scale(1.5);
-}
+
 main .container .section9 {
-  border: 5px solid #ff00bf;
-  width: 100%;
-  margin-top: 100px !important;
+    border: 5px solid #ff00bf;
+    width: 100%;
+    margin-top: 100px !important;
 }
+
 main .container .section9 h2 {
-  border: 5px solid #4400ff;
-  border: 5px solid #00e1ff;
-  font-size: 3rem !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
-main .container .section9 h2:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
+
 main .container .section9 P {
-  padding: 30px;
-  height: 47vh;
-  margin-bottom: 14px;
+    padding: 30px;
+    height: 47vh;
+    margin-bottom: 14px;
 }
+
 main .container .section9 P:hover {
-  color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section9 .propos {
-  border: 5px solid #00ff0d;
-  background: rgba(255, 255, 255, 0.08) !important;
+    border: 5px solid #00ff0d;
+    background: rgba(255, 255, 255, 0.08) !important;
 }
+
 main .container .section9 .img {
-  border: 5px solid #eeff00;
-  height: 100vh;
+    border: 5px solid #eeff00;
+    height: 100vh;
 }
+
 main .container .section10 {
-  margin-top: 100px !important;
-  border: 5px solid #ff00bf;
-  background: rgba(255, 255, 255, 0.08);
-  margin: auto;
-  width: 100%;
+    margin-top: 100px !important;
+    border: 5px solid #ff00bf;
+    background: rgba(255, 255, 255, 0.08);
+    margin: auto;
+    width: 100%;
 }
+
 main .container .section10 h2 {
-  border: 5px solid #4400ff;
-  border: 5px solid #00e1ff;
-  font-size: 3rem !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
-main .container .section10 h2:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-main .container .section10 h3 {
-  padding: 50px;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 main .container .section10 p {
-  padding: 30px 200px;
+    padding: 30px 200px;
 }
+
 main .container .section10 .book {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 60%;
-  margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin: auto;
 }
+
 main .container .section11 {
-  border: 5px solid #ff00bf;
-  background: rgba(255, 255, 255, 0.08);
-  width: 100%;
-  margin-top: 100px !important;
+    border: 5px solid #ff00bf;
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    margin-top: 100px !important;
 }
+
 main .container .section11 h2 {
-  border: 5px solid #4400ff;
-  border: 5px solid #00e1ff;
-  font-size: 3rem !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
-main .container .section11 h2:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-main .container .section11 h3 {
-  padding: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 5px solid aqua;
-}
+
 main .container .section11 p {
-  padding: 30px 200px;
-  border: 5px solid #ff002b;
+    padding: 30px 200px;
+    border: 5px solid #ff002b;
 }
+
 main .container .section11 a {
-  color: #fff;
+    color: #fff;
 }
+
 main .container .section11 .newletter {
-  background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
 main .container .section11 .newletter .input {
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  margin-right: 100px;
-  width: 100%;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    margin-right: 100px;
+    width: 100%;
 }
+
 
 /* FIN MAIN */
+
 footer {
-  margin: 100px 0 0 !important;
-  background: rgba(255, 255, 255, 0.08);
-  height: 30vh !important;
+    margin: 100px 0 0 !important;
+    background: rgba(255, 255, 255, 0.08);
+    height: 30vh !important;
 }
+
 footer .para1 {
-  border: 5px solid rebeccapurple;
-  padding: 40px;
+    border: 5px solid rebeccapurple;
+    padding: 40px;
 }
+
 footer span {
-  padding-top: 20px;
-  margin-right: 40px;
-  font-size: 1rem;
+    padding-top: 20px;
+    margin-right: 40px;
+    font-size: 1rem;
 }
+
 footer .copy {
-  font-size: 10px;
+    font-size: 10px;
 }
+
 
 /* FIN FOOTER */
+
 @media screen and (max-width: 990px) {
-  /* HEADER */
-  #header h1 {
-    font-size: 2rem;
-  }
-  #header .nav-menu a {
-    font-size: 1.1rem;
-  }
-
-  /* FIN HEADER */
-  main .container-fluid h2 {
-    font-size: 2.5rem !important;
-    margin-top: 50px;
-  }
-  main .container {
-    /*  FIN SECTION 1 à 11 */
-    /* FIN SECTION 9 */
-    /* SECTION 10 */
-    /* FIN SECTION 10 */
-    /* SECTION 11 */
-    /* FIN SECTION 11 */
-  }
-  main .container .section1,
-main .container .section2,
-main .container .section3,
-main .container .section4,
-main .container .section5,
-main .container .section6,
-main .container .section7,
-main .container .section8,
-main .container .section9,
-main .container .section10,
-main .container .section11 {
-    margin-top: 50px !important;
-  }
-  main .container .section9 h2 {
-    font-size: 2.5rem !important;
-    margin-bottom: 50px;
-  }
-  main .container .section9 P {
-    padding: 30px !important;
-  }
-  main .container .section10 h2 {
-    font-size: 2.5rem !important;
-    margin-bottom: 50px;
-  }
-  main .container .section10 h3 {
-    padding: 0px;
-  }
-  main .container .section10 p {
-    padding: 30px;
-  }
-  main .container .section11 h2 {
-    font-size: 2.5rem !important;
-  }
-  main .container .section11 h3 {
-    padding: 0px;
-  }
-  main .container .section11 .para {
-    font-size: 2rem !important;
-  }
-  main .container .section11 p {
-    padding: 30px;
-  }
-
-  /* FIN MAIN */
-  footer {
-    margin-top: 100px;
-    height: 30vh;
-  }
-  footer .para1 {
-    padding: 40px;
-  }
-  footer span {
-    padding-top: 20px;
-    margin-right: 35px !important;
-    font-size: 0.9rem;
-  }
-  footer .copy {
-    font-size: 12px;
-  }
-
-  /* FIN FOOTER */
+    /* HEADER */
+    #header h1 {
+        font-size: 2rem;
+    }
+    #header .nav-menu a {
+        font-size: 1.1rem;
+    }
+    /* FIN HEADER */
+    main .container-fluid h2 {
+        font-size: 2.5rem !important;
+        margin-top: 50px;
+    }
+    main .container {
+        /*  FIN SECTION 1 à 11 */
+        /* FIN SECTION 9 */
+        /* SECTION 10 */
+        /* FIN SECTION 10 */
+        /* SECTION 11 */
+        /* FIN SECTION 11 */
+    }
+    main .container .section1,
+    main .container .section2,
+    main .container .section3,
+    main .container .section4,
+    main .container .section5,
+    main .container .section6,
+    main .container .section7,
+    main .container .section8,
+    main .container .section9,
+    main .container .section10,
+    main .container .section11 {
+        margin-top: 50px !important;
+    }
+    main .container .section9 h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 50px;
+    }
+    main .container .section9 P {
+        padding: 30px !important;
+    }
+    main .container .section10 h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 50px;
+    }
+    main .container .section10 h3 {
+        padding: 0px;
+    }
+    main .container .section10 p {
+        padding: 30px;
+    }
+    main .container .section11 h2 {
+        font-size: 2.5rem !important;
+    }
+    main .container .section11 h3 {
+        padding: 0px;
+    }
+    main .container .section11 .para {
+        font-size: 2rem !important;
+    }
+    main .container .section11 p {
+        padding: 30px;
+    }
+    /* FIN MAIN */
+    footer {
+        margin-top: 100px;
+        height: 30vh;
+    }
+    footer .para1 {
+        padding: 40px;
+    }
+    footer span {
+        padding-top: 20px;
+        margin-right: 35px !important;
+        font-size: 0.9rem;
+    }
+    footer .copy {
+        font-size: 12px;
+    }
+    /* FIN FOOTER */
 }
+
+
 /* FIN MEDIA QUERY */
+
 @media screen and (max-width: 760px) {
-  /* HEADER */
-  #header h1 {
-    font-size: 1.5rem;
-  }
-  #header .nav-menu a {
-    font-size: 1rem;
-  }
-
-  /* FIN HEADER */
-  main {
-    overflow: hidden !important;
-  }
-  main .container-fluid h2 {
-    font-size: 2rem !important;
-    margin-top: 50px;
-  }
-  main .container {
-    /*  FIN SECTION 1 à 11 */
-    /* FIN SECTION 9 */
-    /* SECTION 10 */
-    /* FIN SECTION 10 */
-    /* SECTION 11 */
-    /* FIN SECTION 11 */
-  }
-  main .container .section1,
-main .container .section2,
-main .container .section3,
-main .container .section4,
-main .container .section5,
-main .container .section6,
-main .container .section7,
-main .container .section8,
-main .container .section9,
-main .container .section10,
-main .container .section11 {
-    margin-top: 50px !important;
-  }
-  main .container .section9 h2 {
-    font-size: 2rem !important;
-    margin-bottom: 50px;
-  }
-  main .container .section9 P {
-    padding: 30px !important;
-  }
-  main .container .section10 h2 {
-    font-size: 2rem !important;
-    margin-bottom: 50px;
-  }
-  main .container .section10 h3 {
-    padding: 0px;
-  }
-  main .container .section10 p {
-    padding: 30px;
-  }
-  main .container .section11 h2 {
-    font-size: 2rem !important;
-  }
-  main .container .section11 h3 {
-    padding: 0px;
-  }
-  main .container .section11 .para {
-    font-size: 1.6em !important;
-  }
-  main .container .section11 p {
-    padding: 30px;
-  }
-
-  /* FIN MAIN */
-  footer {
-    margin-top: 100px;
-    height: 30vh;
-  }
-  footer .para1 {
-    padding: 40px;
-  }
-  footer span {
-    padding-top: 20px;
-    margin-right: 30px !important;
-    font-size: 0.6rem;
-  }
-  footer .copy {
-    font-size: 9px;
-  }
-
-  /* FIN FOOTER */
+    /* HEADER */
+    #header h1 {
+        font-size: 1.5rem;
+    }
+    #header .nav-menu a {
+        font-size: 1rem;
+    }
+    /* FIN HEADER */
+    main {
+        overflow: hidden !important;
+    }
+    main .container-fluid h2 {
+        font-size: 2rem !important;
+        margin-top: 50px;
+    }
+    main .container {
+        /*  FIN SECTION 1 à 11 */
+        /* FIN SECTION 9 */
+        /* SECTION 10 */
+        /* FIN SECTION 10 */
+        /* SECTION 11 */
+        /* FIN SECTION 11 */
+    }
+    main .container .section1,
+    main .container .section2,
+    main .container .section3,
+    main .container .section4,
+    main .container .section5,
+    main .container .section6,
+    main .container .section7,
+    main .container .section8,
+    main .container .section9,
+    main .container .section10,
+    main .container .section11 {
+        margin-top: 50px !important;
+    }
+    main .container .section9 h2 {
+        font-size: 2rem !important;
+        margin-bottom: 50px;
+    }
+    main .container .section9 P {
+        padding: 30px !important;
+    }
+    main .container .section10 h2 {
+        font-size: 2rem !important;
+        margin-bottom: 50px;
+    }
+    main .container .section10 h3 {
+        padding: 0px;
+    }
+    main .container .section10 p {
+        padding: 30px;
+    }
+    main .container .section11 h2 {
+        font-size: 2rem !important;
+    }
+    main .container .section11 h3 {
+        padding: 0px;
+    }
+    main .container .section11 .para {
+        font-size: 1.6em !important;
+    }
+    main .container .section11 p {
+        padding: 30px;
+    }
+    /* FIN MAIN */
+    footer {
+        margin-top: 100px;
+        height: 30vh;
+    }
+    footer .para1 {
+        padding: 40px;
+    }
+    footer span {
+        padding-top: 20px;
+        margin-right: 30px !important;
+        font-size: 0.6rem;
+    }
+    footer .copy {
+        font-size: 9px;
+    }
+    /* FIN FOOTER */
 }
+
 
 /*# sourceMappingURL=style.css.map */
