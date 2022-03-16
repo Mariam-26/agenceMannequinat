@@ -248,9 +248,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transition: 00.3s ease-in-out;
-                    transform-origin: 50% 50%;
-                    filter: contrast(140%);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -291,7 +289,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         } //  FIN SECTION 2 
@@ -331,7 +329,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -372,7 +370,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -413,7 +411,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -455,7 +453,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -497,7 +495,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -539,7 +537,7 @@ main {
                 height: 100vh;
                 transition: transform 1.5s;
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -639,6 +637,11 @@ main {
                 padding: 30px 200px;
                 border: 5px solid rgb(255, 0, 43);
             }
+            .infos {
+                padding: 30px 150px;
+                margin-bottom: 50px auto;
+                border: 5px solid rgb(208, 255, 0);
+            }
             a {
                 color: #fff;
             }
@@ -668,12 +671,12 @@ footer {
     height: 30vh !important;
     .para1 {
         border: 5px solid rebeccapurple;
-        padding: 40px;
+        padding: 40px !important;
     }
     span {
-        padding-top: 20px;
-        margin-right: 40px;
-        font-size: 1rem;
+        border: 5px solid rgb(153, 51, 65);
+        margin-right: 60px;
+        font-size: 1.2rem;
     }
     .copy {
         font-size: 10px;
@@ -727,6 +730,12 @@ footer {
             .section10,
             .section11 {
                 margin-top: 50px !important;
+            }
+            .section11 {
+                .infos {
+                    padding: 30px 100px;
+                    margin-bottom: 50px auto;
+                }
             }
             /*  FIN SECTION 1 à 11 */
             // SECTION 9
@@ -815,11 +824,6 @@ footer {
     }
     /* FIN HEADER */
     // MAIN
-    // FAUX SELECTEUR
-    // %h2 {
-    //     font-size: 2rem !important;
-    //     margin-top: 50px;
-    // }
     main {
         overflow: hidden !important;
         .container-fluid {
@@ -843,6 +847,19 @@ footer {
             .section10,
             .section11 {
                 margin-top: 50px !important;
+            }
+            .section11 {
+                .column {
+                    flex-direction: column;
+                }
+                flex-direction: column !important;
+                p {
+                    padding: 30px 200px;
+                }
+                .infos {
+                    padding: 30px 150px;
+                    margin-bottom: 50px auto;
+                }
             }
             /*  FIN SECTION 1 à 11 */
             // SECTION 9

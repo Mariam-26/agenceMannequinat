@@ -190,9 +190,7 @@ main .container .section1 img {
   transition: transform 1.5s;
 }
 main .container .section1 img:hover {
-  transition: 0.3s ease-in-out;
-  transform-origin: 50% 50%;
-  filter: contrast(140%);
+  transform: scale(1.1);
 }
 main .container .section2 {
   border: 5px solid #ff00bf;
@@ -229,7 +227,7 @@ main .container .section2 img {
   transition: transform 1.5s;
 }
 main .container .section2 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section3 {
   border: 5px solid #ff00bf;
@@ -266,7 +264,7 @@ main .container .section3 img {
   transition: transform 1.5s;
 }
 main .container .section3 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section4 {
   border: 5px solid #ff00bf;
@@ -303,7 +301,7 @@ main .container .section4 img {
   transition: transform 1.5s;
 }
 main .container .section4 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section5 {
   border: 5px solid #ff00bf;
@@ -340,7 +338,7 @@ main .container .section5 img {
   transition: transform 1.5s;
 }
 main .container .section5 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section6 {
   border: 5px solid #ff00bf;
@@ -378,7 +376,7 @@ main .container .section6 img {
   transition: transform 1.5s;
 }
 main .container .section6 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section7 {
   border: 5px solid #ff00bf;
@@ -416,7 +414,7 @@ main .container .section7 img {
   transition: transform 1.5s;
 }
 main .container .section7 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section8 {
   border: 5px solid #ff00bf;
@@ -454,7 +452,7 @@ main .container .section8 img {
   transition: transform 1.5s;
 }
 main .container .section8 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 main .container .section9 {
   border: 5px solid #ff00bf;
@@ -547,6 +545,11 @@ main .container .section11 p {
   padding: 30px 200px;
   border: 5px solid #ff002b;
 }
+main .container .section11 .infos {
+  padding: 30px 150px;
+  margin-bottom: 50px auto;
+  border: 5px solid #d0ff00;
+}
 main .container .section11 a {
   color: #fff;
 }
@@ -569,12 +572,12 @@ footer {
 }
 footer .para1 {
   border: 5px solid rebeccapurple;
-  padding: 40px;
+  padding: 40px !important;
 }
 footer span {
-  padding-top: 20px;
-  margin-right: 40px;
-  font-size: 1rem;
+  border: 5px solid #993341;
+  margin-right: 60px;
+  font-size: 1.2rem;
 }
 footer .copy {
   font-size: 10px;
@@ -615,6 +618,10 @@ main .container .section9,
 main .container .section10,
 main .container .section11 {
     margin-top: 50px !important;
+  }
+  main .container .section11 .infos {
+    padding: 30px 100px;
+    margin-bottom: 50px auto;
   }
   main .container .section9 h2 {
     font-size: 2.5rem !important;
@@ -705,6 +712,19 @@ main .container .section9,
 main .container .section10,
 main .container .section11 {
     margin-top: 50px !important;
+  }
+  main .container .section11 {
+    flex-direction: column !important;
+  }
+  main .container .section11 .column {
+    flex-direction: column;
+  }
+  main .container .section11 p {
+    padding: 30px 200px;
+  }
+  main .container .section11 .infos {
+    padding: 30px 150px;
+    margin-bottom: 50px auto;
   }
   main .container .section9 h2 {
     font-size: 2rem !important;
