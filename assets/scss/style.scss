@@ -144,10 +144,10 @@ main {
             font-weight: 700;
             text-transform: uppercase;
             line-height: 1;
+            margin-top: 100px;
             &:hover {
                 color: rgba(255, 255, 255, 0.7);
             }
-            margin-top: 100px;
         }
         .section1 {
             margin-top: 100px !important;
@@ -491,7 +491,7 @@ main {
             background: rgba(255, 255, 255, 0.08);
             margin-top: 100px !important;
             h2 {
-                margin-top: 0px !important;
+                margin: 50px 0 !important;
                 font-size: 3rem !important;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -499,7 +499,6 @@ main {
                 &:hover {
                     color: rgba(255, 255, 255, 0.7);
                 }
-                margin-bottom: 50px;
             }
             h3 {
                 padding: 50px;
@@ -516,7 +515,7 @@ main {
             background: rgba(255, 255, 255, 0.08);
             margin-top: 100px !important;
             h2 {
-                margin-top: 0px !important;
+                margin: 50px 0 !important;
                 font-size: 3rem !important;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -524,13 +523,15 @@ main {
                 &:hover {
                     color: rgba(255, 255, 255, 0.7);
                 }
-                margin-bottom: 50px;
             }
             h3 {
                 width: 100%;
                 // padding: 50px 0 !important;
                 text-transform: uppercase;
                 // text-align: center;
+            }
+            .abonne {
+                margin: 50px 0 !important;
             }
             p {
                 padding: 30px 150px;
@@ -561,7 +562,7 @@ main {
 
 // FOOTER
 footer {
-    margin: 100px 0 0 !important;
+    margin: 50px 0 0 !important;
     background: rgba(255, 255, 255, 0.08);
     height: 30vh !important;
     .para1 {
@@ -644,7 +645,6 @@ footer {
             }
             .section11 {
                 h2 {
-                    color: aqua;
                     margin: 50px auto !important;
                 }
                 margin: 50px 0 !important;
@@ -769,7 +769,7 @@ footer {
             .section10 {
                 h2 {
                     font-size: 2rem !important;
-                    margin-top: 50px;
+                    margin-top: 50px !important;
                 }
                 h3 {
                     padding: 0px;
@@ -782,22 +782,15 @@ footer {
             /* SECTION 11 */
             .section11 {
                 text-align: center !important;
-                margin: auto !important;
+                // margin: auto !important;
                 h2 {
                     font-size: 2rem !important;
-                }
-                .moi {
-                    border: 5px solid rgb(0, 128, 128);
+                    margin-top: 50px !important;
                 }
                 h3 {
                     text-align: center;
                     margin: auto 0 !important;
                     width: 100%;
-                }
-                .mail {
-                    color: aqua;
-                    text-align: center !important;
-                    margin: auto !important;
                 }
                 p {
                     margin: auto 0 !important;
