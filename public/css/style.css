@@ -461,12 +461,11 @@ main .container .section10 {
   margin-top: 100px !important;
 }
 main .container .section10 h2 {
-  margin-top: 0px !important;
+  margin: 50px 0 !important;
   font-size: 3rem !important;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 50px;
 }
 main .container .section10 h2:hover {
   color: rgba(255, 255, 255, 0.7);
@@ -484,12 +483,11 @@ main .container .section11 {
   margin-top: 100px !important;
 }
 main .container .section11 h2 {
-  margin-top: 0px !important;
+  margin: 50px 0 !important;
   font-size: 3rem !important;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 50px;
 }
 main .container .section11 h2:hover {
   color: rgba(255, 255, 255, 0.7);
@@ -497,6 +495,9 @@ main .container .section11 h2:hover {
 main .container .section11 h3 {
   width: 100%;
   text-transform: uppercase;
+}
+main .container .section11 .abonne {
+  margin: 50px 0 !important;
 }
 main .container .section11 p {
   padding: 30px 150px;
@@ -519,7 +520,7 @@ main .container .section11 .newletter .input {
 
 /* FIN MAIN */
 footer {
-  margin: 100px 0 0 !important;
+  margin: 50px 0 0 !important;
   background: rgba(255, 255, 255, 0.08);
   height: 30vh !important;
 }
@@ -616,7 +617,6 @@ main .container .section11 img {
     margin: 50px 0 !important;
   }
   main .container .section11 h2 {
-    color: aqua;
     margin: 50px auto !important;
   }
   main .container .section11 h3 {
@@ -723,7 +723,7 @@ main .container .section11 {
   }
   main .container .section10 h2 {
     font-size: 2rem !important;
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
   main .container .section10 h3 {
     padding: 0px;
@@ -733,23 +733,15 @@ main .container .section11 {
   }
   main .container .section11 {
     text-align: center !important;
-    margin: auto !important;
   }
   main .container .section11 h2 {
     font-size: 2rem !important;
-  }
-  main .container .section11 .moi {
-    border: 5px solid teal;
+    margin-top: 50px !important;
   }
   main .container .section11 h3 {
     text-align: center;
     margin: auto 0 !important;
     width: 100%;
-  }
-  main .container .section11 .mail {
-    color: aqua;
-    text-align: center !important;
-    margin: auto !important;
   }
   main .container .section11 p {
     margin: auto 0 !important;
